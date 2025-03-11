@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo">This is GetelementsByTagName</p>
+    <h1 id="Demo1">This is qerySelector</h1>
+    <p class="demoClass">This is querySelectorAll.</p>
+    <p class="demoClass">This is querrSelectorAll.</p>
+    <p class = "demo2">This is getElementByClassName</p>
+    <h3 id = "hid">This is getElementById</h3>
+</body>
+<script>
+    document.getElementsByTagName("p")[0].style.background = "red";
+    document.querySelector("#Demo1").style.background = "Blue";
+    document.getElementById("hid").style.background = "purple";
+    let elements = document.querySelectorAll(".demoClass");
+
+    for(let i = 0; i<elements.length; i++){
+        elements[i].style.background = "yellow"
+    }
+    let element = document.getElementsByClassName("demo2");
+    for(let i = 0; i < element.length; i++){
+        element[i].style.background = "green"
+    }
+</script>
+</html>
